@@ -1,4 +1,4 @@
-name: neofetch # check to see if it's available
+name: neofetch-snap # check to see if it's available
 version: '0.1+git' # check the version number of clementine's packages
 summary: Neofetch is a CLI system information tool written in BASH. # 79 char long summary
 description: |
