@@ -9,6 +9,8 @@ confinement: devmode # use 'strict' once you have the right plugs
 apps:
   neofetch:
     command: neofetch
+    plugs:
+      - home
 
 parts:
   my-parts:
