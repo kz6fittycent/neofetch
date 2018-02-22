@@ -1,0 +1,27 @@
+name: neofetch # check to see if it's available
+version: '0.1+git' # check the version number of clementine's packages
+summary: Neofetch is a CLI system information tool written in BASH. # 79 char long summary
+description: |
+  Neofetch displays information about your system next to an image, your OS logo, or any ASCII file of your choice. The main purpose of Neofetch is to be used in screenshots to show other users what OS/Distro you're running, what Theme/Icons you're using etc.
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs
+
+apps:
+  neofetch:
+    command: neofetch
+
+parts:
+  my-parts:
+    plugin: make
+    source: https://github.com/dylanaraps/neofetch
+    source-type: git
+    
+    build-packages:
+      - libxml2-dev 
+      - libxslt1-dev 
+      - python-dev
+      
+    stage-packages:
+      - libxml2-dev 
+      - libxslt1-dev 
+      - python-dev
