@@ -1,10 +1,10 @@
 name: neofetch-snap # check to see if it's available
-version: '0.2+git' # check the version number of clementine's packages
+version: '0.3+git' # check the version number of clementine's packages
 summary: Neofetch is a CLI system information tool written in BASH. # 79 char long summary
 description: |
   Neofetch displays information about your system next to an image, your OS logo, or any ASCII file of your choice. The main purpose of Neofetch is to be used in screenshots to show other users what OS/Distro you're running, what Theme/Icons you're using etc.
-grade: devel # must be 'stable' to release into candidate/stable channels
-confinement: devmode # use 'strict' once you have the right plugs
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   neofetch:
@@ -13,6 +13,7 @@ apps:
       - home
       - network
       - hardware-random-observe
+      - content
 
 parts:
   my-parts:
