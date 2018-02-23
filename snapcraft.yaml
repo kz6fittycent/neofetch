@@ -8,7 +8,7 @@ confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   neofetch-snap:
-    command: neofetch
+    command: $SNAP/usr/bin/neofetch
     plugs:
       - home
       - network
