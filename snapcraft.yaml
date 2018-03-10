@@ -1,5 +1,5 @@
 name: neofetch-kz6fittycent # check to see if it's available
-version: '0.7+git' # check the version number of clementine's packages
+version: '0.8+git' # check the version number of clementine's packages
 summary: Neofetch is a CLI system information tool written in BASH. # 79 char long summary
 description: |
   Neofetch displays information about your system next to an image, your OS logo, or any ASCII file of your choice. The main purpose of Neofetch is to be used in screenshots to show other users what OS/Distro you're running, what Theme/Icons you're using etc.
@@ -31,5 +31,4 @@ parts:
       - python-dev
       
     install: |
-      cd neofetch
       make install
